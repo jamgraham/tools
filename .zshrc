@@ -21,7 +21,7 @@ plugins=(
 
 source $ZSH/oh-my-zsh.sh
 source /etc/profile
-source /Users/jgraham/.rvm/scripts/rvm
+source ~/.rvm/scripts/rvm
 
 export PATH=~/bin:$PATH
 
