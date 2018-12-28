@@ -6,6 +6,8 @@ alias dc="docker-compose"
 alias dm="docker-machine"
 alias bastion="ssh xxx"
 alias gopath="cd ~/go-workspace/src/github.com"
+alias dockerrm="docker rm $(docker ps -q -f 'status=exited')"
+alias dockerrmi="docker rmi $(docker images -q -f "dangling=true")"
 
 echo 'export PATH="/usr/local/opt/imagemagick@6/bin:$PATH"' >> ~/.zshrc
 
